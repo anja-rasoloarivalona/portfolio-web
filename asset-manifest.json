@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cafea6cb.css",
+    "main.js": "/static/js/main.2259f8ab.js",
+    "static/js/231.5af2a9b4.chunk.js": "/static/js/231.5af2a9b4.chunk.js",
+    "static/js/318.43c1592d.chunk.js": "/static/js/318.43c1592d.chunk.js",
+    "static/js/222.7a03c249.chunk.js": "/static/js/222.7a03c249.chunk.js",
+    "static/js/36.2bd76515.chunk.js": "/static/js/36.2bd76515.chunk.js",
+    "static/js/2.755ad90f.chunk.js": "/static/js/2.755ad90f.chunk.js",
+    "static/js/465.18765fb0.chunk.js": "/static/js/465.18765fb0.chunk.js",
+    "static/js/569.c0e2b333.chunk.js": "/static/js/569.c0e2b333.chunk.js",
+    "static/js/371.130dbfd3.chunk.js": "/static/js/371.130dbfd3.chunk.js",
+    "static/js/423.1915d639.chunk.js": "/static/js/423.1915d639.chunk.js",
+    "static/media/mphase.png": "/static/media/mphase.477aba824068ca91cd92.png",
+    "static/media/bizbizshare.png": "/static/media/bizbizshare.5fee85a75c2d63f585db.png",
+    "static/media/Anja Rasoloarivalona - CV.pdf": "/static/media/Anja Rasoloarivalona - CV.c4ea6d5ef5afbed06092.pdf",
+    "static/media/naia.png": "/static/media/naia.5730aa30d0bbab29fa2e.png",
+    "static/media/phone1.png": "/static/media/phone1.92bc7b91eaf6587e894f.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/form-animation.lottie": "/static/media/form-animation.50f7a80ad8e33afc6607.lottie",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.cafea6cb.css.map": "/static/css/main.cafea6cb.css.map",
+    "main.2259f8ab.js.map": "/static/js/main.2259f8ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cafea6cb.css",
+    "static/js/main.2259f8ab.js"
+  ]
+}
