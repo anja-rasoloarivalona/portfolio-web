@@ -22,7 +22,7 @@ export const list: Array<TestimonialType> = [
     },
     {
         id: '3',
-        author: 'Cyrielle, Developer',
+        author: 'Cyrielle',
         post: 'developer',
         date: new Date('2023-06-26'),
     },
