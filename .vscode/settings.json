@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.accessibilitySupport": "off",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/deployphp/deployer/master/src/schema.json": "file:///c%3A/Users/rasol/OneDrive/Documents/Dev/portfolio/.github/workflows/deploy.yml"
+    }
+}

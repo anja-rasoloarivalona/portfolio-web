@@ -1,0 +1,86 @@
+{
+    "generic": {
+        "contact": "Contact",
+        "cto": "CTO",
+        "developer": "Developer",
+        "email": "Email",
+        "first_name": "First name",
+        "full_stack_developer": "Full-Stack Developer",
+        "greetings": {
+            "morning": "Good morning",
+            "afternoon": "Good afternoon",
+            "evening": "Good evening"
+        },
+        "last_name": "Last name",
+        "message": "message"
+    },
+    "home": {
+        "about_me": {
+            "title": "About me",
+            "text": "Thank you for visiting my portfolio. I really appreciate it. My name is Anja, I come from Antananarivo, the capital of Madagascar. Today, I work at <color>mPhase</color> here in Montreal as a <color>Full-Stack Developer</color> but it's been a long way before I could become a Developer. Truth to be told, I was not supposed to.",
+            "sections": {
+                "2014": "In 2014, I completed my French Baccalaureate with a focus on <color>mathematics</color>, which led me to leave my home country to pursue a Bachelor of Business Administration at HEC Montreal. Initially, I specialized in <color>Finance</color>, but as time went on, I realized that I wasn't fully satisfied with this path.<br> To better align my studies with my interests, I chose to pursue a mixed specialization in Finance and <color>Information Technology</color>. During my final two years at HEC, I gained valuable insights into information technology, particularly from a management perspective, which has broadened my understanding of how technology can be integrated into business practices.",
+                "2018": "It was only during the last semester before graduation in 2018 that I had the chance to take <color>my first programming course.</color> It was a real game changer. I finally found what I was looking for. I finally found the field that combined creativity and problem solving. It was the first time I felt an intense desire to solve all the problems that got in my way, even if it meant staying up until 3am.<br>However, after graduating, I needed to find a job as soon as possible. That's how I became a Customer Manager in a French startup. But deep down, I knew <color>I wanted to become a developer</color>. That's how my self-taught journey began, long days at work followed by long nights of learning.",
+                "2020": "In 2020, everything gets complicated. Covid 19 literally puts the world on pause. I lost my job, yet I had obligations. So I took the opportunity to redouble my efforts during the lockdown and a few months later I managed to land my first Front-End Developer job at <color>BizBizShare</color>. <br>BizBizShare is a Quebec-based startup that owns several B2B marketplaces and offer white label marketplaces as well for various clients. The technology is composed of <color>several microservices.</color> When I arrived in 2020, I was in charge of rebuilding the whole interface of the marketplaces with <color>React</color> and <color>Redux.</color> and the admin panel with <color>Vue.js</color>.",
+                "2021": "We've successfully <color>achieved  that goal</color> in May 2021, when we finally unplugged the old technology. It was a richfull experience, I learnt a lot as I was also deeply involved in the backend development processes using <color>Node.js</color> and <color>MySQL</color>. <br> In November 2021, I embarked on a new adventure by joining <color>mPhase</color>. This opportunity allowed me to work on a diverse range of projects, including student transportation, child daycare services, and electronic logbook app drivers. Each day presented new challenges and learning experiences, as I had the chance to work on web development using <color>React</color>, <color>Angular</color>, and <color>TypeScript</color>, manage APIs with Node.js and <color>MongoDB</color>, and develop mobile applications with <color>React Native</color>. I enjoyed the variety and complexity of working on different projects simultaneously, which further enhanced my skills and broadened my expertise.",
+                "2023": "In 2023, I received an unexpected opportunity when the CTO of BizBiz Share reached out to me regarding a new project. He, along with his roommate, who is a lawyer, had founded a business focused on immigration a few years prior under the name <color>NAIA</color>, or North American Immigration Agency. They were looking to take the next step by developing an <color>application tracking system</color> (ATS). As the <color>sole developer</color> on this project, I was responsible for designing the <color>UI/UX</color>, constructing the <color>entire interface</color>, and building the necessary <color>APIs.</color> <br> The system was successfully deployed to production in January 2024 and is now being utilized by hundreds of users on a daily basis. It features a comprehensive role-based access control system that enables administrators to create various types of immigration cases, allowing for the specification of different forms and documents as needed. Today, this system simplifies the management of user files and forms, and it incorporates <color>Artificial Intelligence</color> technology to automatically extract and cross-check information, significantly speeding up the processing time."
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "intro": {
+                "title": "Let's make something great together",
+                "text": "I’m always happy to connect and answer any questions you might have. Feel free to drop me a message through this form, and I’ll get back to you as soon as possible. As I’m based in Montreal, my availability is generally best during Eastern Time (ET), but I’ll make sure to respond regardless of your time zone. Looking forward to hearing from you!"
+            },
+            "form": {
+                "cta": "Send",
+                "error": {
+                    "generic": "An error occurred",
+                    "invalid_email": "Please enter a valid email",
+                    "message_required": "Please enter a message"
+                },
+                "success": "Thank you for reaching out! I will get back to you as soon as possible.",
+                "title": "Send a message"
+            }
+        },
+        "hero": {
+            "greeting": "{{greeting}}, my name is",
+            "text": "I'm a Full-Stack Developer based in Montreal Canada, with half a decade of experience. My love for coding has allowed me to successfully build and maintain websites, APIs and mobile applications that are used by thousands of people daily. If you'd like to connect, feel free to reach out! I'd be happy to hear from you."
+        },
+        "skills": {
+            "title": "My skills"
+        },
+        "testimonials": {
+            "title": "What they say about me",
+            "list": {
+                "1": "When I have a question about the server or there's a bug, I know I can contact you so we can look into it together. <br> And quickly and efficiently fix the problem! 🛠️",
+                "2": "Your analytical skills are truly impressive. The improvement discussions and your feedback on the code are always very relevant. <br> Good job!",
+                "3": "You're always ready to explain the why and how. You help me a lot! Thanks!",
+                "4": "You try to find solutions no matter the challenge. I'm really looking forward to seeing the solution for permission management in mTransport. <br> It's a big task and a great challenge.",
+                "5": "Congrats on the creation/documentation of scoola-server tasks! It's a big job!"
+            }
+        },
+        "works": {
+            "title": "My works",
+            "cta": "Learn more"
+        }
+    },
+    "navigation": {
+        "home": "Home",
+        "works": "My works",
+        "skills": "My skills",
+        "about": "About me",
+        "contact": "Contact"
+    },
+    "works": {
+        "bizbizshare": {
+            "tagline": "BizBiz Share promotes a circular economy by providing white-labeled marketplaces where companies can exchange and share resources and services across various industries."
+        },
+        "mphase": {
+            "tagline": "mPhase handles a diverse range of projects, including both in-house projects and client assignments. These projects cover areas like student transportation, child daycare and many more."
+        },
+        "naia": {
+            "tagline": "NAIA, or \"North American Immigration Agency\", offers a fully customizable and white labeled application tracking system (ATS). At its core, it leverages AI to increase efficiency and reduce processing times."
+        }
+    }
+}

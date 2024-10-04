@@ -1,0 +1,86 @@
+{
+    "generic": {
+        "contact": "Contact",
+        "cto": "CTO",
+        "developer": "Développeur",
+        "email": "Courriel",
+        "first_name": "Prénom",
+        "full_stack_developer": "Développeur Full-Stack",
+        "greetings": {
+            "morning": "Bonjour",
+            "afternoon": "Bonjour",
+            "evening": "Bonsoir"
+        },
+        "last_name": "Nom",
+        "message": "Message"
+    },
+    "home": {
+        "about_me": {
+            "title": "À mon propos",
+            "text": "Je vous remercie d'avoir pris le temps de visiter mon portefolio. Je m'appelle Anja et je viens d'Antananarivo, la capitale de Madagascar. Aujourd'hui, je travaille chez <color>mPhase</color>, ici à Montréal, en tant <color>Développeur Full-Stack</color>, mais cela a été un long chemin avant d'en arriver là.  A vrai dire, je n'étais pas censé le devenir.",
+            "sections": {
+                "2014": "En 2014, j'ai obtenu mon Baccalauréat français avec une spécialisation en <color>mathématiques</color>, ce qui m'a amené à quitter mon pays pour poursuivre un Bachelor en Administration des affaires à HEC Montréal. Au départ, je me suis spécialisé en <color>Finance</color>, mais au fil du temps, j'ai réalisé que cette voie ne me satisfaisait pas pleinement.<br /> Pour mieux aligner mes études avec mes intérêts, j'ai choisi une spécialisation mixte en <color>Finance</color> et en <color>Technologie de l'information</color>. Au cours de mes deux dernières années à HEC, j'ai acquis des connaissances précieuses, notamment d'un point de vue managérial, ce qui a élargi ma compréhension de l'intégration des technologies dans les entreprises.",
+                "2018": "C'était seulement durant le dernier semestre en 2018, que j'ai eu la chance de suivre <color>mon premier cours de programmation</color>. Cela a été une véritable révélation. J'ai enfin trouvé ce que je cherchais. J'ai enfin trouvé le domaine qui alliait créativité et résolution de problème . ​Ce fut la première fois que j'éprouvais un désir intense de résoudre tous les problèmes qui entravaient mon chemin, même si cela impliquait le fait de veiller jusqu'à 3h du matin.<br>Cependant, après avoir obtenu mon diplôme, il me fallait trouver un travail le plus vite possible. C 'est ainsi que je suis devenu Responsable Clientèle au sein d'une start up française. Mais au fond de moi, je savais que <color>je voulais devenir développeur.</color> C'est ainsi que commence mon périple d'autodidacte, des longues journées au travail suivies par une longue nuit d'apprentissage.",
+                "2020": "En 2020, tout ce compliqua. Le Covid 19 met littéralement le monde sur pause. J'ai perdu mon travail, et pourtant j'avais des obligations familiales. J'ai donc saisi l'opportunité pour redoubler d'effort durant le confinement et quelques mois plus tard j'ai réussi à décrocher mon premier poste de développeur front end chez <color>BizBizShare</color>. <br> BizBizShare est une startup québécoise qui possède plusieurs marketplaces en B2B et offre aussi des marketplaces en marque blanche à divers clients. La technologie est composée de <color>plusieurs microservices.</color> Lorsque je suis arrivé en 2020, j'étais chargé de reconstruire l'ensemble de l'interface des marketplaces avec <color>React</color> et <color>Redux</color> ainsi que le pannel adminstrateur avec <color>Vue.js</color>",
+                "2021": "Nous avons <color>réussi à atteindre cet objectif</color> en mai 2021, lorsque nous avons enfin débranché l'ancienne technologie. Ce fut une expérience enrichissante ; j'ai beaucoup appris, car j'étais également fortement impliqué dans les processus de développement backend en utilisant <color>Node.js</color> et <color>MySQL</color>.<br /> En novembre 2021, j'ai commencé une nouvelle aventure en rejoignant <color>mPhase</color>. Cette opportunité m'a permis de travailler sur une gamme diversifiée de projets, notamment le transport d'étudiants, les services de garde d'enfants et une application de journal électronique pour les chauffeurs. Chaque jour présentait de nouveaux défis et des expériences d'apprentissage, car j'ai eu la chance de travailler sur le développement web en utilisant <color>React</color>, <color>Angular</color> et <color>TypeScript</color>, de gérer des API avec <color>Node.js</color> et <color>MongoDB</color>, et de développer des applications mobiles avec <color>React Native</color>. J'ai apprécié la variété et la complexité de travailler sur différents projets simultanément, ce qui a encore amélioré mes compétences et élargi mon expertise.",
+                "2023": "En 2023, j'ai reçu une opportunité inattendue lorsque le CTO de BizBiz Share m'a contacté au sujet d'un nouveau projet. Lui, ainsi que son colocataire, qui est avocat, avaient fondé une entreprise axée sur l'immigration quelques années auparavant sous le nom de <color>NAIA</color>, ou North American Immigration Agency. Ils cherchaient à franchir une nouvelle étape en développant un <color>système de suivi des candidatures</color> (ATS). En tant que <color>développeur unique</color> sur ce projet, j'étais responsable de la conception de l'<color>UI/UX</color>, de la construction de <color>l'interface complète</color> et de la création des <color>APIs</color> nécessaires.<br /> Le système a été déployé avec succès en production en janvier 2024 et est désormais utilisé par des centaines d'utilisateurs au quotidien. Celui-ci permet aux administrateurs et avocats de créer divers types de cas d'immigration en simplifiant la gestion des dossiers et des formulaires des utilisateurs. Grâce à l'<color>Intelligence Artificielle</color>, il est capable d'extraire et recouper automatiquement les informations, ce qui accélère considérablement le temps de traitement."
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "intro": {
+                "title": "Je suis là pour répondre à vos questions.",
+                "text": "N'hésitez pas à m'envoyer un message via ce formulaire, et je vous répondrai dès que possible. Je suis toujours ravi d'échanger et de répondre à vos questions. Étant basé à Montréal, ma disponibilité est généralement meilleure durant les heures de l'Est (HE), mais je ferai en sorte de vous répondre, peu importe votre fuseau horaire."
+            },
+            "form": {
+                "cta": "Envoyer",
+                "error": {
+                    "generic": "Une erreur s'est produite",
+                    "invalid_email": "Veuillez entrer un courriel valide s'il vous plaît",
+                    "message_required": "Veuillez entrer un message s'il vous plaît"
+                },
+                "success": "Merci de m'avoir contacté ! Je vous répondrai dès que possible.",
+                "title": "Envoyer un message"
+            }
+        },
+        "hero": {
+            "greeting": "{{greeting}}, mon nom est",
+            "text": "Je suis un Développeur Full-Stack basé à Montréal, Canada, avec 5 ans d'expérience. Ma passion pour la programmation m'a permis de construire et de maintenir avec succès des sites web, des API et des applications mobiles utilisées par des milliers de personnes au quotidien. Si vous souhaitez prendre contact, n'hésitez pas à me le faire savoir ! Je serais ravi de discuter avec vous."
+        },
+        "skills": {
+            "title": "Mes compétences"
+        },
+        "testimonials": {
+            "title": "Ce qu'on dit de moi",
+            "list": {
+                "1": "Quand j'ai une question sur le serveur ou qu'il y a un bug, je sais que je peux te contacter pour qu'on regarde ça ensemble. <br> Et qu'on corrige rapidement et efficacement le problème! 🛠️ ",
+                "2": "Ta capacité d'analyse est vraiment remarquable. Les discussions d'amélioration et tes rétroactions sur le code sont toujours très pertinentes. <br> Good job!",
+                "3": "Toujours prê à m'expliquer le pourquoi du comment. Tu m'aides beaucoup ! Merci !",
+                "4": "Tu essayes de trouver des solutions, quel que soit le défi. J'ai bien hâte de voir la solution pour la gestion des permissions dans mTransport. <br> C'est une grosse tâche et un beau défi.",
+                "5": "Bravo pour la création/documentation des tâches scoola-server ! C'est un gros travail!"
+            }
+        },
+        "works": {
+            "title": "Mes travaux",
+            "cta": "En savoir plus"
+        }
+    },
+    "navigation": {
+        "home": "Accueil",
+        "works": "Mes travaux",
+        "skills": "Mes compétences",
+        "about": "À mon propos",
+        "contact": "Contact"
+    },
+    "works": {
+        "bizbizshare": {
+            "tagline": "BizBiz Share favorise une économie circulaire en fournissant des marketplaces en marque blanche où les entreprises peuvent échanger et partager des ressources et des services dans divers secteurs."
+        },
+        "mphase": {
+            "tagline": "mPhase prend en charge une multitude de projets captivants, allant des initiatives internes aux missions pour des clients. Ces projets englobent des domaines variés tels que le transport scolaire, la garde d'enfants, et bien d'autres encore."
+        },
+        "naia": {
+            "tagline": "NAIA, ou \"North American Immigration Agency\", propose un système de suivi des demandes entièrement personnalisable et en marque blanche. Au cœur de son fonctionnement, il utilise l'IA pour accroître l'efficacité et réduire les délais de traitement."
+        }
+    }
+}

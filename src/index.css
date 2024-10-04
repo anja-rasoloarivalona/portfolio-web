@@ -1,13 +1,124 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    font-family: 'Inter, sans-serif';
+    overflow-y: overlay;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 56.25%; /* 1rem = 9px */
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* 1rem = 8px */
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0a192f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ababab;
+    border-radius: 10px;
+    border: 2px solid #0a192f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #64ffda;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #64ffda;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    background-color: #fbf9ff;
+}
+
+ol,
+ul {
+    padding-left: 0rem;
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
 }
