@@ -25,6 +25,10 @@ export const Container = styled.div<{ isCentered: boolean }>`
             };
         }
     }}
+
+    ${({ theme }) => theme.breakpoints.mobile} {
+        margin-bottom: ${({ theme }) => theme.box.spacing.lg};
+    }
 `;
 
 export const Text = styled.h2`

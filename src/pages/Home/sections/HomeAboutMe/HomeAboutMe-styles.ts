@@ -5,12 +5,12 @@ export const Container = styled.div`
     flex-direction: column;
     margin-bottom: 10vh;
 
-    @media (max-width: 650px) {
-        margin-bottom: ${({ theme }) => theme.box.spacing.lg};
-    }
-
     .list-view {
         margin-top: ${({ theme }) => `${theme.box.spacing.lg}`};
+    }
+
+    @media (max-width: 650px) {
+        margin-bottom: 0px;
     }
 `;
 
@@ -26,6 +26,7 @@ export const ListViewItem = styled.div<{ viewHeight: number }>`
 
     @media (max-width: 650px) {
         padding: 0;
+        height: max-content;
 
         > div {
             height: max-content;

@@ -4,11 +4,12 @@ import { Container } from './HomeWorksMobile-styles';
 import { config } from '../../../../../config/main';
 import { HomeWorksMobileItem } from './components';
 import { useTranslation } from 'react-i18next';
+import { Routes } from '../../../../../routes';
 
 const HomeWorksMobile = () => {
     const { t } = useTranslation();
     return (
-        <PageSection>
+        <PageSection id={Routes.WORKS}>
             <Title>{t('home.works.title')}</Title>
             <Container>
                 {[...config.works.values()].map((work) => (

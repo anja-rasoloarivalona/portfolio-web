@@ -113,12 +113,8 @@ const HomeWorksDesktop = () => {
                 <Title>{t('home.works.title')}</Title>
                 <Container ref={containerRef} isActive={isActive} isClosing={isClosing}>
                     <ListView
-                        activeIndex={activeIndex}
-                        setActiveIndex={setActiveIndex}
-                        labels={[...config.works.values()].map((work) => work.companyName)}
-                        height={760}
-                    >
-                        {[...config.works.values()].map((work, index) => (
+                        list={[...config.works.values()]}
+                        renderItem={(work, index) => (
                             <HomeWorksDesktopItem
                                 work={work}
                                 isDisplayed={activeIndex === index}
@@ -127,8 +123,12 @@ const HomeWorksDesktop = () => {
                                 viewWork={viewWork}
                                 closeWork={closeWork}
                             />
-                        ))}
-                    </ListView>
+                        )}
+                        activeIndex={activeIndex}
+                        setActiveIndex={setActiveIndex}
+                        labels={[...config.works.values()].map((work) => work.companyName)}
+                        height={760}
+                    />
                 </Container>
             </PageSection>
         </>

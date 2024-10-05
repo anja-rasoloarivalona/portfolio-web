@@ -25,6 +25,11 @@ export const Container = styled.div`
             color: ${({ theme }) => theme.colors.lightGrey};
         }
     }
+
+    ${({ theme }) => theme.breakpoints.midsize} {
+        margin-top: ${({ theme }) => theme.box.spacing.xl};
+        margin-bottom: ${({ theme }) => theme.box.spacing.xl};
+    }
 `;
 
 export const SliderItem = styled.div`
@@ -72,7 +77,8 @@ export const Testimonial = styled.div`
     border-radius: 0.5rem;
     box-shadow: ${({ theme }) => theme.box.shadow.main};
     padding: ${({ theme }) => theme.box.spacing.md};
-    height: 20rem;
+    height: max-content;
+    min-height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

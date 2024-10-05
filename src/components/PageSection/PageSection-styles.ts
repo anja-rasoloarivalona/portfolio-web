@@ -26,4 +26,16 @@ export const Container = styled.div<{ expandHeight: boolean; expandWidth: boolea
             };
         }
     }}
+
+    ${({ theme }) => theme.breakpoints.mobile} {
+        ${({ expandWidth }) => {
+            if (expandWidth === true) {
+                return {
+                    '.page__section__title': {
+                        margin: `0px 2rem`,
+                    },
+                };
+            }
+        }}
+    }
 `;

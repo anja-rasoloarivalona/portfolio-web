@@ -19,6 +19,7 @@ import { ButtonLink, ButtonLinkTypes } from '../../../components';
 import { Locale } from '../../../types';
 import { AppContext } from '../../../App';
 import { Logo } from '../components';
+import { changeLocale } from '../../../translations';
 
 const HeaderMobile = () => {
     const { t } = useTranslation();
@@ -86,7 +87,9 @@ const HeaderMobile = () => {
                             </MenuListItem>
                         ))}
                         <MenuListItem>
-                            <MenuListItemText>
+                            <MenuListItemText
+                                onClick={() => changeLocale(locale === Locale.EN ? Locale.FR : Locale.EN)}
+                            >
                                 {locale === Locale.EN ? 'Français' : 'English'}
                             </MenuListItemText>
                         </MenuListItem>

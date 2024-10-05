@@ -1,8 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
     Container,
-    PreviewList,
-    PreviewListContainer,
     SelectList,
     SelectListItem,
     SelectListItemText,
@@ -10,9 +8,11 @@ import {
     SelectListScrollIndicator,
 } from './ListView-styles';
 import { generateId } from '../../helpers';
+import { ListViewHorizontal, ListViewVertical } from './components';
 
-type Props = {
-    children: React.ReactNode;
+type Props<T> = {
+    list: Array<T>;
+    renderItem: (item: T, index: number) => React.ReactNode;
     height: number; // in px
     activeIndex: number;
     setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
@@ -20,14 +20,15 @@ type Props = {
     direction?: 'vertical' | 'horizontal';
 };
 
-const ListView = ({
+const ListView = <T,>({
+    list,
+    renderItem,
     activeIndex,
     setActiveIndex,
     labels,
     height,
-    children,
     direction = 'vertical',
-}: Props) => {
+}: Props<T>) => {
     const listId = useRef(generateId());
     const [activeIndicator, setActiveIndicator] = useState({ offset: 0 });
 
@@ -37,7 +38,7 @@ const ListView = ({
         });
     }, []);
 
-    const list = useMemo(() => {
+    const listLabels = useMemo(() => {
         return labels.map((label, index) => ({
             id: `${listId.current}-${index}`,
             label: label,
@@ -52,7 +53,7 @@ const ListView = ({
         if (activeIndex !== selectedIndex) {
             setActiveIndex(selectedIndex);
         }
-        const element = document.getElementById(list[selectedIndex].id);
+        const element = document.getElementById(listLabels[selectedIndex].id);
         if (element != null) {
             setActiveIndicator({
                 offset: direction === 'vertical' ? element.offsetTop : element.offsetLeft,
@@ -61,7 +62,7 @@ const ListView = ({
     };
 
     return (
-        <Container className="list-view" direction={direction} height={height} {...activeIndicator}>
+        <Container className="list-view" direction={direction} {...activeIndicator}>
             <SelectList className="list-view__select">
                 <SelectListScroll className="list-view__select__scroll">
                     <SelectListScrollIndicator
@@ -69,7 +70,7 @@ const ListView = ({
                         className="list-view__select__scroll__indicator"
                     />
                 </SelectListScroll>
-                {list.map(({ label, id }, index) => (
+                {listLabels.map(({ label, id }, index) => (
                     <SelectListItem
                         key={index}
                         onMouseEnter={() => onChangeIndex(index)}
@@ -84,11 +85,21 @@ const ListView = ({
                 ))}
             </SelectList>
 
-            <PreviewListContainer className="list-view__preview" height={height}>
-                <PreviewList height={height} activeIndex={activeIndex}>
-                    {children}
-                </PreviewList>
-            </PreviewListContainer>
+            {direction === 'vertical' ? (
+                <ListViewVertical
+                    list={list}
+                    renderItem={renderItem}
+                    activeIndex={activeIndex}
+                    height={height}
+                />
+            ) : (
+                <ListViewHorizontal
+                    list={list}
+                    renderItem={renderItem}
+                    activeIndex={activeIndex}
+                    onChangeIndex={onChangeIndex}
+                />
+            )}
         </Container>
     );
 };

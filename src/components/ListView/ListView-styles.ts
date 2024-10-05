@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div<{
     direction: 'vertical' | 'horizontal';
     offset: number;
-    height: number;
 }>`
     display: flex;
     align-items: center;
@@ -107,14 +106,4 @@ export const SelectListItemText = styled.div`
         color: ${({ theme }) => theme.colors.green};
         transform: scale(1.5);
     }
-`;
-
-export const PreviewListContainer = styled.div<{ height: number }>`
-    height: ${({ height }) => `${height}px`};
-    overflow: hidden;
-`;
-
-export const PreviewList = styled.ul<{ activeIndex: number; height: number }>`
-    transform: ${({ activeIndex, height }) => `translateY(${activeIndex * height * -1}px)`};
-    transition: all 0.3s ease-in;
 `;

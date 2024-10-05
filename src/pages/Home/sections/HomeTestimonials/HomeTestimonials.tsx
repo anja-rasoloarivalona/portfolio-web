@@ -29,7 +29,7 @@ const HomeTestimonials = () => {
     const sliderConfig = useMemo(() => {
         if (windowSize.width <= Breakpoints.MOBILE) {
             return {
-                centerPadding: '50px',
+                centerPadding: '0px',
             };
         }
         if (windowSize.width <= Breakpoints.TABLET) {
@@ -60,7 +60,7 @@ const HomeTestimonials = () => {
                     dots={true}
                     className="slider"
                     arrows={false}
-                    autoplay={true}
+                    // autoplay={true}
                     autoplaySpeed={5000}
                     pauseOnHover={true}
                     pauseOnFocus={true}

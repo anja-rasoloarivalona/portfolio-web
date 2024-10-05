@@ -42,7 +42,7 @@ const HomeWorksDesktopItem = ({ work, isDisplayed, isActive, isHidden, closeWork
         const auth = encodeURIComponent(
             window.btoa(
                 JSON.stringify({
-                    role: 'employee',
+                    role: 'admin',
                     secret: process.env.REACT_APP_SECRET,
                 }),
             ),

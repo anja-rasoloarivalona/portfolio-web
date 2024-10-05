@@ -1,5 +1,5 @@
-import React from 'react';
-import { Work } from '../../../../../../../types';
+import React, { useMemo } from 'react';
+import { Work, WorkId } from '../../../../../../../types';
 import {
     Container,
     Content,
@@ -20,6 +20,21 @@ type Props = {
 const HomeWorksMobileItem = ({ work }: Props) => {
     const { t } = useTranslation();
 
+    const websiteUrl = useMemo(() => {
+        if (work.id !== WorkId.NAIA) {
+            return work.websiteUrl;
+        }
+        const auth = encodeURIComponent(
+            window.btoa(
+                JSON.stringify({
+                    role: 'admin',
+                    secret: process.env.REACT_APP_SECRET,
+                }),
+            ),
+        );
+        return `${work.websiteUrl}/uuid?auth=${auth}`;
+    }, [work.id]);
+
     return (
         <Container>
             <ImageContainer>
@@ -31,7 +46,7 @@ const HomeWorksMobileItem = ({ work }: Props) => {
                 <ContentDescription>
                     {t(`works.${work.translationKey}.tagline` as ResourceKey)}
                 </ContentDescription>
-                <Button>Learn more</Button>
+                <Button externalPath={websiteUrl}> {t('home.works.cta')}</Button>
             </Content>
         </Container>
     );
