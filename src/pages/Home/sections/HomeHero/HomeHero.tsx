@@ -17,10 +17,10 @@ const HomeHero = () => {
                 <Name>Anja Rasoloarivalona</Name>
                 <Text>{t('home.hero.text')}</Text>
                 <ButtonLinks>
-                    <ButtonLink type={ButtonLinkTypes.GITHUB} />
                     <ButtonLink type={ButtonLinkTypes.BITBUCKET} />
                     <ButtonLink type={ButtonLinkTypes.LINKEDIN} />
                     <ButtonLink type={ButtonLinkTypes.CV} />
+                    <ButtonLink type={ButtonLinkTypes.GITHUB} />
                     <ButtonLink type={ButtonLinkTypes.EMAIL} />
 
                     <Button

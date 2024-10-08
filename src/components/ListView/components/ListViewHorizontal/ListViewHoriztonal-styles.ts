@@ -3,5 +3,5 @@ import styled from 'styled-components';
 export const Container = styled.div``;
 
 export const SliderItem = styled.div`
-    padding: ${({ theme }) => theme.box.spacing.md};
+    padding: ${({ theme }) => theme.box.spacing.md} 0;
 `;

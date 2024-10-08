@@ -29,7 +29,7 @@ export const Container = styled.div<{
                                 width: '7%',
                                 height: '2px',
                                 top: 'unset',
-                                left: '6%',
+                                left: '4.5%',
                                 bottom: 0,
                                 transform: `translateX(${offset}px)`,
                             },

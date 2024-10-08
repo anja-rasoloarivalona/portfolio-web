@@ -1,5 +1,11 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import { Container, LeadingIconContainer, TrailingIconBar, TrailingIconContainer } from './Button-styles';
+import {
+    Anchor,
+    Container,
+    LeadingIconContainer,
+    TrailingIconBar,
+    TrailingIconContainer,
+} from './Button-styles';
 import { BsChevronRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { Spinner } from '../Spinner';
@@ -50,9 +56,9 @@ const Button = ({
 
     if (externalPath != null) {
         return (
-            <a href={externalPath} target="_blank" rel="noopener norefereer">
+            <Anchor href={externalPath} target="_blank" rel="noopener norefereer">
                 {renderButton()}
-            </a>
+            </Anchor>
         );
     }
 

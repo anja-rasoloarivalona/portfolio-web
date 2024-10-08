@@ -70,3 +70,7 @@ export const LeadingIconContainer = styled.div`
         transform: translateY(1px);
     }
 `;
+
+export const Anchor = styled.a`
+    width: max-content;
+`;

@@ -131,10 +131,10 @@ const HomeContact = () => {
                         ))}
                     </Info>
                     <ButtonLinks>
-                        <ButtonLink type={ButtonLinkTypes.GITHUB} />
                         <ButtonLink type={ButtonLinkTypes.BITBUCKET} />
                         <ButtonLink type={ButtonLinkTypes.LINKEDIN} />
                         <ButtonLink type={ButtonLinkTypes.CV} />
+                        <ButtonLink type={ButtonLinkTypes.GITHUB} />
                         <ButtonLink type={ButtonLinkTypes.EMAIL} />
                     </ButtonLinks>
                     <Form onSubmit={handleSubmit} noValidate>

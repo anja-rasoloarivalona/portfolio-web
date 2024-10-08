@@ -82,6 +82,10 @@ export const Testimonial = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    ${({ theme }) => theme.breakpoints.midsize} {
+        margin: 0 ${({ theme }) => theme.box.spacing.md};
+    }
 `;
 
 export const TestimonialText = styled.span`
